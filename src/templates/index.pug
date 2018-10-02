@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+	- var href = "/index.html"
+
+//- Phần khai báo body
+block header
+	include ../lib/header/h-1/index.pug
+block body
+block footer
