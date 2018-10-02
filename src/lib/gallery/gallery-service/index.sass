@@ -1,0 +1,61 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-gallery-1
+	padding: 2rem 0 2rem 0
+	+media-breakpoint-up(lg)
+		padding: 4rem 0 4rem 0
+	.gallery-details
+		.item
+			display: flex
+			text-decoration: none
+			border-radius: 5px
+			figure
+				border-radius: 5px
+				margin-bottom: 2rem
+				width: 100%
+				position: relative
+				.gallery-bg
+					position: absolute
+					top: -1rem
+				.boxzoom
+					position: relative
+					overflow: hidden
+					+size(220px)
+					border-radius: 50%
+					box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15)
+					border: 2px solid $extra
+					img.gallery-img
+						position: absolute
+						transition: all .5s ease-in-out
+						right: 0%
+				figcaption
+					padding: 1rem
+					h3
+						font-size: 1.125rem
+						font-weight: 400
+						color: $blacks
+						margin: 2rem 0 0 0
+						text-transform: uppercase
+			&:hover
+				figure
+					&:after
+						z-index: 1
+					img.gallery-img
+						transform: scale(1.1)
+					.zoom-item
+						opacity: 1
+		a.btn
+			outline: none
+			border: none
+			+size(12rem, 3rem)
+			line-height: 3rem
+			border-radius: 1.5rem
+			background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			color: $whites
+			text-transform: uppercase
+			font-weight: 300
