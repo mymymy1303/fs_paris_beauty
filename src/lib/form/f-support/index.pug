@@ -1,0 +1,38 @@
+section.canhcam-form-1
+	.container
+		.row.info.no-gutters.p-3
+			.col
+				h3.h3.text-center đăng ký tư vấn
+				form.validator.mt-4
+					.row
+						.form-group.col-12
+							input#name.form-control(type='text', placeholder='Họ và tên', data-error="Vui lòng nhập thông tin", required)
+							.help-block.with-errors
+					.row
+						.form-group.col-12
+							input#Email.form-control(type='text', placeholder='Email', data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+							.help-block.with-errors
+					.row
+						.form-group.col-12
+							input#Phone.form-control(type='text', placeholder='Số điện thoại', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
+							.help-block.with-errors
+					.row
+						.form-group.col-12
+							select#serviceSelect(name="serviceSelect")
+								option(value="" disabled selected) Chọn dịch vụ
+								option(value="123") 123
+								option(value="123") 123
+								option(value="123") 123
+					.row
+						.form-group.col-12
+							select#timeSelect(name="timeSelect")
+								option(value="" disabled selected) Chọn ngày giờ
+								option(value="123") 123
+								option(value="123") 123
+								option(value="123") 123
+
+					.row
+						.col
+							.submit-button-wrapper.d-flex.align-items-center.justify-content-center.mt-3
+								button.btn.text-uppercase.p-0(type="submit")
+									| đặt lịch
