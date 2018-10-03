@@ -4,6 +4,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/jquery/dist/jquery.slim.min.js',
 				'bower_components/popper.js/dist/umd/popper.min.js',
 				'bower_components/bootstrap/dist/js/bootstrap.min.js',
+				'bower_components/lightgallery/dist/js/lightgallery-all.min.js',
 				// Phần Plugins
 				'bower_components/owl.carousel/dist/owl.carousel.min.js',
 			])
