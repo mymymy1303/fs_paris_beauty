@@ -4,10 +4,20 @@
 //////////////////////////////////////
 
 .canhcam-gallery-1
-	padding: 2rem 0 2rem 0
+	padding: 4.5rem 0 4.5rem 0
 	+media-breakpoint-up(lg)
 		padding: 4rem 0 4rem 0
 	.gallery-details
+		.gallery-title
+			h2
+				color: $main
+				font-size: 1.875rem
+				font-weight: 400
+				text-transform: uppercase
+			p
+				font-size: 1rem
+				line-height: 1.2rem
+				color: $xam-1
 		.item
 			display: flex
 			text-decoration: none
@@ -50,7 +60,7 @@
 		a.btn
 			outline: none
 			border: none
-			+size(12rem, 3rem)
+			+size(11rem, 3rem)
 			line-height: 3rem
 			border-radius: 1.5rem
 			background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
