@@ -1,0 +1,42 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-services-founder
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	h2
+		text-transform: uppercase
+		color: $main
+		font-weight: 400
+		font-size: 1.875rem
+	h3 
+		text-transform: uppercase
+		color: $blacks
+		font-weight: 600
+		font-size: 1rem
+	p
+		line-height: 1.3rem
+		font-size: 1rem
+	+media-breakpoint-up(lg)
+		.text 
+			padding-left: 2rem 
+			text-align: justify
+		.text-odd
+			text-align: justify
+			padding-right: 2rem 
+		figure
+			height: 19rem
+			position: relative
+			overflow: hidden
+			img
+				+pos(absolute, 50% null null 50%)
+				+transform(scale(1.2) translateX(-50%) translateY(-50%))
+		.text
+			height: 19rem
+			background-image: url('./../img/home/home_nguoisanglap_bg.png')
+			background-size: cover
+			background-position: top center
+			background-repeat: no-repeat
