@@ -4,6 +4,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/font-awesome/css/font-awesome.min.css',
 				'bower_components/mdi/css/materialdesignicons.min.css',
 				'bower_components/animate.css/animate.min.css',
+				'bower_components/mdi/css/materialdesignicons.min.css',
 				// OWL
 				'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
 				'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',

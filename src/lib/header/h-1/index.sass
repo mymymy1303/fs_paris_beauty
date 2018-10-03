@@ -1,0 +1,63 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-header-3
+	background: white
+	&:after
+		content: url(".././img/_global/header_shape_top.png")
+		display: block
+		width: 100%
+		height: auto
+		background: transparent
+		position: absolute
+		top: 2.5rem
+		left: -5px
+		z-index: -1
+	.nav-top
+		height: auto
+		background: linear-gradient(270deg, #c9952f 0%, #eac441 48%, #c9952f 100%)
+		font-family: 'UTM Avo'
+		span,a
+			line-height: 2rem
+	.navbar
+		.navbar-toggler
+			border: 1px solid darken(white,20%)
+			padding: 0.5rem 0.75rem
+			&:focus
+				outline: none
+		.navbar-brand
+			img
+				height: 5rem
+		#CCMenuHeader
+			ul
+				li 
+					padding: 0
+					a 
+						color: #666666
+						font-family: 'UTM Avo'
+						font-size: 1rem
+						font-weight: 500
+						i
+							color: #C8942A
+		&.expand
+			.navbar-toggler
+				background: $main
+				color: white
+				border-color: $main
+		+media-breakpoint-up(xl)
+			#CCMenuHeader
+				ul
+					li
+						padding: 0 0.5rem
+						a
+							font-size: 1.143rem
+		+media-breakpoint-up(lg)
+			.navbar
+				position: relative
+			.navbar-collapse
+				position: static
+	+media-breakpoint-down(lg)
+		&:after
+			display: none
