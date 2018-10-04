@@ -1,0 +1,29 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-pagination-1
+	+media-breakpoint-up(lg)
+	.pagelist
+		.pagination
+			margin-bottom: 0
+			.page-item
+				margin-left: .5rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					+bor-rad(50% 50%)
+					width: 2.5rem
+					height: 2.5rem
+					justify-content: center
+					align-items: center
+					display: flex
+					color: darken($whites ,20%)
+					border: 0
+					background-color: $clouds
+				&.active
+					.page-link
+						color: $blacks
+						background-color: $whites
+						border: 1px solid $main
