@@ -1,0 +1,102 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-form-1
+	background-image: url('./../img/home/home_datlich_bg.png')
+	background-size: cover
+	background-position: top left
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+		background-position: center center
+	h3
+		color: darken($main, 12%)
+		+fw(400)
+	.info
+		background-color: rgba(255, 255, 255, .5)
+		box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3)
+		background-image: -moz-linear-gradient( 116deg, $main 0%, $extra 100%), -moz-linear-gradient( 116deg, $main 0%, $extra 100%)
+		background-image: -webkit-linear-gradient( 116deg, $main 0%, $extra 100%), -webkit-linear-gradient( 116deg, $main 0%, $extra 100%)
+		background-image: -ms-linear-gradient( 116deg, $main 0%, $extra 100%), -ms-linear-gradient( 116deg, $main 0%, $extra 100%)
+		background-position: 100% 0, 0 0
+		background-repeat: no-repeat
+		-webkit-background-size: 2px 100%
+		-moz-background-size: 2px 100%
+		background-size: 2px 100%
+		border-top: 2px solid $extra
+		border-bottom: 2px solid $main
+		+media-breakpoint-up(md)
+			+size(70%, 100%)
+			margin-left: 15%
+		+media-breakpoint-up(lg)
+			+size(40%, 100%)
+			margin-left: 60%
+		+media-breakpoint-up(xl)
+			+size(30%, 100%)
+			margin-left: 70%
+		h3
+			+fz(1.3rem)
+			text-transform: uppercase
+	form
+		input
+			background: transparent
+			border: 0
+			outline: none
+			border-bottom: 1px solid lighten($xam-1, 50%)
+			border-radius: 0
+			padding-left: 0
+			padding-top: 0
+			padding-bottom: 1rem
+			+size(100%, 2rem)
+			&::webkit-input-placeholder
+				color: darken($main, 12%)
+				+fw(400)
+				+fz(.9rem)
+			&::placeholder
+				color: darken($main, 12%)
+				+fw(400)
+				+fz(.9rem)
+			&::-moz-placeholder
+				color: darken($main, 12%)
+				+fw(400)
+				+fz(.9rem)
+			&:-ms-input-placeholder
+				color: darken($main, 12%)
+				+fw(400)
+				+fz(.9rem)
+
+			&:focus
+				background: transparent
+				border-bottom: 1px solid $xam-1
+				box-shadow: initial
+		.help-block
+			ul
+				margin-bottom: 0
+				+fz(.9rem)
+				color: $do-1
+		select
+			height: 2.5rem
+			line-height: 0
+			padding-bottom: 1rem
+			border: 0
+			outline: none
+			background-color: transparent
+			width: 100%
+			border-bottom: 1px solid lighten($xam-1, 50%)
+			color: darken($main, 12%)
+			option
+				color: darken($main, 12%)
+		button.btn
+			outline: none
+			border: none
+			+size(11rem, 3rem)
+			line-height: 3rem
+			border-radius: 1.5rem
+			background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			color: $whites
+			text-transform: uppercase
+			font-weight: 300

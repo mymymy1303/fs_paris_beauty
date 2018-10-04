@@ -1,0 +1,60 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-gallery-profit
+	padding: 4.5rem 0 2.5rem 0
+	+media-breakpoint-up(lg)
+		padding: 4rem 0 4rem 0
+	.gallery-details
+		.gallery-title
+			h2
+				color: $main
+				font-size: 1.875rem
+				font-weight: 400
+				text-transform: uppercase
+			p
+				font-size: 1rem
+				line-height: 1.2rem
+				color: $xam-1
+		.item
+			display: flex
+			text-decoration: none
+			border-radius: 5px
+			figure
+				border-radius: 5px
+				margin-bottom: 2rem
+				width: 100%
+				position: relative
+				.boxzoom
+					position: relative
+					+size(8.75rem)
+					border-radius: 50%
+					border: 1px solid $whites
+					transition: all .5s ease-in-out
+					img.gallery-img
+						position: absolute
+						transition: all .5s ease-in-out
+						top: 50%
+						left: 50%
+						transform: translateX(-50%) translateY(-50%)
+						-webkit-filter: invert(50%)
+						filter: invert(50%)
+				figcaption
+					padding: 1rem
+					h3
+						font-size: 1.125rem
+						font-weight: 400
+						color: $blacks
+						transition: all .5s ease-in-out
+			&:hover
+				figure
+					.boxzoom
+						box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15)
+						border-color: $main
+						img.gallery-img
+							filter: invert(60%) sepia(10%) saturate(2500%) hue-rotate(5deg)
+							-webkit-filter: invert(60%) sepia(10%) saturate(2500%) hue-rotate(5deg)
+					h3
+						color: $main
