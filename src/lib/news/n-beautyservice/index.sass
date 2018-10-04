@@ -7,6 +7,9 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	h4
+		color: $main
+		+fw(400)
 	.news-tabs
 		a.btn
 			outline: none
@@ -16,12 +19,12 @@
 			border: 1px solid lighten($xam-1, 40%)
 			box-shadow: none
 			width: 100%
-			&:focus
-				background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
-				background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
-				background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
-				border: 1px solid transparent
-				color: $whites
+		a.btn.active
+			background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+			border: 1px solid transparent
+			color: $whites
 	.news-list
 		.item
 			display: block
