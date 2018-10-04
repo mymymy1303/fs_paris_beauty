@@ -4,7 +4,9 @@
 //////////////////////////////////////
 
 .canhcam-header-3
-	background: white
+	background: white 
+	position: fixed
+	z-index: 1030
 	&:after
 		content: url(".././img/_global/header_shape_top.png")
 		display: block
@@ -41,6 +43,7 @@
 						font-weight: 500
 						i
 							color: #C8942A
+
 		&.expand
 			.navbar-toggler
 				background: $main
@@ -59,5 +62,11 @@
 			.navbar-collapse
 				position: static
 	+media-breakpoint-down(lg)
+		position: static
+		z-index: 0
+		.navbar
+			.navbar-brand
+				img
+					height: 4rem
 		&:after
 			display: none
