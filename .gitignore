@@ -98,3 +98,6 @@ UserInterfaceState.xcuserstate
 dist/css/main.css
 dist/css/main.css.map
 *.css
+
+src/lib/main.sass
+src/templates/index.pug
