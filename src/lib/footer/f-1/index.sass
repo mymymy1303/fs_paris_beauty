@@ -1,0 +1,77 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-2
+	background-color: $footer
+	position: relative
+	z-index: 1
+	color: $blacks
+	overflow: hidden
+	+media-breakpoint-down(xs)
+		text-align: center
+	h4
+		color: $nau-1
+		position: relative
+		font-size: 1.125rem
+		margin-bottom: 1.5rem
+		text-transform: uppercase
+		+media-breakpoint-up(md)
+			margin-bottom: .5rem
+	.linkfooter
+		padding: 3rem 0 3rem 0
+		.footer-icon-wrapper
+			i
+				font-size: 1.3rem
+				color: $nau-1
+		.list-group
+			.list-group-item
+				display: inline-block
+				border: 0
+				padding: .5rem 0 .5rem 0
+				background-color: transparent
+				+media-breakpoint-up(md)
+					padding: 0
+				a
+					font-size: .9rem
+					color: $blacks
+		img
+			+media-breakpoint-up(md)
+				transform: scale(1.4)
+		.socials
+			.social-list
+				position: relative
+				padding-bottom: 2rem
+				.list-inline
+					margin: 0
+					font-size: 0
+					.list-inline-item
+						font-size: 1.125rem
+						border-radius: 50%
+						background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 100%)
+						background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 100%)
+						background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 100%)
+						a
+							+size(2.5rem, auto)
+							border-radius: 50%
+							color: $whites
+						a,i
+							line-height: 2.5rem
+						&:last-child
+							margin: 0
+				&:before
+					position: absolute
+					content: ''
+					+size(100%, 1px)
+					background-color: $whites
+					bottom: 0
+					left: 0
+	.copyright
+		padding: 1rem
+		background-image: -moz-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+		background-image: -webkit-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+		background-image: -ms-linear-gradient( 0deg, $main 0%, $extra 49%, $main 100%)
+		color: $whites
+		text-transform: uppercase
+		font-weight: 200
